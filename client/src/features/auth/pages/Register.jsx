@@ -12,7 +12,7 @@ const Register = () => {
 
     const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         await handleRegister(username, email, password);
         navigate("/");
